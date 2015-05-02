@@ -1,10 +1,14 @@
-void blinkColor(int r, int g, int b, int count)
+//Spark Utilites - A batman style toolbelt of functions for your Spark Core
+//Written by Liam O'Brien
+//V1.0
+
+void blinkColor(int r, int g, int b, int count, int delay = 600)
 {
      for (int i; i < count; i++) {
         RGB.color(r, g, b);
-        delay(600);
+        delay(delay);
         RGB.color(0, 0, 0);
-        delay(600);
+        delay(delay);
      }
 }
 
