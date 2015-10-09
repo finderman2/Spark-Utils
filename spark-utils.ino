@@ -4,7 +4,7 @@
 
 void blinkColor(int r, int g, int b, int count, int delay = 600)
 {
-     for (int i; i < count; i++) {
+     for (int i; i <= count; i++) {
         RGB.color(r, g, b);
         delay(delay);
         RGB.color(0, 0, 0);
